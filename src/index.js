@@ -10,7 +10,7 @@ var omid;
 var bahar;
 
 var zahra;
-
+var morvarid;
 root.render(
   <React.StrictMode>
     <App />
