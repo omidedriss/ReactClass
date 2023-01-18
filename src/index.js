@@ -6,7 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var omid;
-var x;
+
+var bahar;
+
+var zahra;
+
 root.render(
   <React.StrictMode>
     <App />
