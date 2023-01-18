@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 var omid;
 
 var bahar;
-
+var milad;
 var zahra;
 var morvarid;
 root.render(
