@@ -11,6 +11,10 @@ const Welcome = (props)=>{
 function App() {
   return (
     <div className="App">
+
+      hello
+
+
      hello {Math.floor(Math.random()*40)}
      <div>
                 <Welcome>
@@ -21,6 +25,7 @@ function App() {
                 <h2>reactapp.ir</h2>
                 <p onClick={this.props.handler}>My Name is {this.props.name} and I {this.props.age} years old</p>
             </div>
+
     </div>
   );
 }
