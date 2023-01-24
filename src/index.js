@@ -5,6 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+function Hello(props){
+  return <div>Hello {props.name}</div>
+}
+
+
+const Hello2= ({name}) => <div>Hello {name}</div>
+
 root.render(
   <React.StrictMode>
     <div >
