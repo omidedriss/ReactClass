@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-import {welcome,mydata,Mmytag,MyCounter} from './Mohammad';
+import {welcome,mydata,Child_tag,MyCounter} from './Mohammad';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
@@ -31,8 +31,8 @@ root.render(
   <React.StrictMode>
     <div >
       {mydata().last_name}
-      <Mmytag></Mmytag>
-     <MyCounter></MyCounter>
+      <Child_tag></Child_tag>
+     <MyCounter number="20"></MyCounter>
       
     </div>
   </React.StrictMode>
