@@ -22,7 +22,6 @@ function App() {
                  <h2>test </h2>
     
                 </Welcome>
-                <h2>reactapp.ir</h2>
                 <p onClick={this.props.handler}>My Name is {this.props.name} and I {this.props.age} years old</p>
             </div>
 
