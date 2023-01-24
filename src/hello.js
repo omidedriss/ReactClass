@@ -8,26 +8,21 @@ const Welcome = (props)=>{
   )
 }
 
-function App() {
+const hello=(props)=> {
   return (
-    <div className="App">
-
-      hello
-
-
-     hello {Math.floor(Math.random()*40)}
+    <div>
+     {/* hello {Math.floor(Math.random()*40)} */}
      <div>
                 <Welcome>
                  <h1>Welcome to React World Developer</h1>
                  <h2>test </h2>
     
                 </Welcome>
-                <h2>reactapp.ir</h2>
-                <p onClick={this.props.handler}>My Name is {this.props.name} and I {this.props.age} years old</p>
+                <h2>test</h2>
+                <p onClick={props.handler}>My Name is {props.name} and I {props.age} years old</p>
             </div>
-
     </div>
   );
 }
 
-export default App;
+export default hello;
