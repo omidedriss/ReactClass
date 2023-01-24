@@ -12,6 +12,12 @@ function Hello(props){
 
 const Hello2= ({name}) => <div>Hello {name}</div>
 
+var omid;
+
+var bahar;
+var milad;
+var zahra;
+var morvarid;
 root.render(
   <React.StrictMode>
     <div >
