@@ -10,7 +10,9 @@ function Hello(props){
   return <div>Hello {props.name}</div>
 }
 
-
+function Name(props){
+  return (<div>{props.name}{props.lastname}</div>)
+}
 const Hello2= ({name}) => <div>Hello {name}</div>
 const click=(name)=>{
 alert("hi");
@@ -28,11 +30,14 @@ var zahra;
 var morvarid;
 root.render(
   <React.StrictMode>
-    <div >
-      ss
-    <hello name="omid" age="35" handler={()=>click("omid")}/>
     
-    </div>
+  <div>
+    {Name({name:"morvarid", lastname:"parhizgar"})}
+  </div>
+    
+    
+
+
   </React.StrictMode>
 );
 
