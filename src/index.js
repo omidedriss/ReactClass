@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Hello from './component/hello';
+import{Hello,Welcome} from './component/hello'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const Test =(props)=>{
+  return(<div> morvarid {props.lastname}</div>)
+};
 
 function Name(props){
   return (<div>{props.name}{props.lastname}</div>)
@@ -30,10 +33,12 @@ root.render(
   <React.StrictMode>
     
   <div>
-    <Hello name="morvarid"/>
+    <Hello name="morvarid" age="35"/>
   </div>
     
-    
+  <div>
+    <Test lastname="parhizgar"/>
+    </div>  
 
 
   </React.StrictMode>
