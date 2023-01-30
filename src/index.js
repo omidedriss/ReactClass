@@ -1,24 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import hello from './hello';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import hello from "./hello";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 function Hello(props) {
-  return <div>Hello {props.name}</div>
+  return <div>Hello {props.name}</div>;
 }
 
-
-
-const Hello2 = ({ name }) => <div>Hello {name}</div>
+const Hello2 = ({ name }) => <div>Hello {name}</div>;
 const click = (name) => {
   alert("hi");
-}
+};
 var omid;
 var omidTest;
 var Test;
+var test2;
 // class Hello extends Component{
 //   render(){
 //      return <div>Hello {this.props.name}</div>
@@ -31,10 +30,9 @@ var zahra;
 var morvarid;
 root.render(
   <React.StrictMode>
-    <div >
+    <div>
       ss
       <hello name="omid" age="35" handler={() => click("omid")} />
-
     </div>
   </React.StrictMode>
 );
