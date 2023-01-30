@@ -18,6 +18,7 @@ const click = (name) => {
 }
 var omid;
 var omidTest;
+var Test;
 // class Hello extends Component{
 //   render(){
 //      return <div>Hello {this.props.name}</div>
