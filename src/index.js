@@ -6,16 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-function Hello(props){
+function Hello(props) {
   return <div>Hello {props.name}</div>
 }
 
 
-const Hello2= ({name}) => <div>Hello {name}</div>
-const click=(name)=>{
-alert("hi");
+
+const Hello2 = ({ name }) => <div>Hello {name}</div>
+const click = (name) => {
+  alert("hi");
 }
 var omid;
+var omidTest;
 // class Hello extends Component{
 //   render(){
 //      return <div>Hello {this.props.name}</div>
@@ -30,8 +32,8 @@ root.render(
   <React.StrictMode>
     <div >
       ss
-    <hello name="omid" age="35" handler={()=>click("omid")}/>
-    
+      <hello name="omid" age="35" handler={() => click("omid")} />
+
     </div>
   </React.StrictMode>
 );
