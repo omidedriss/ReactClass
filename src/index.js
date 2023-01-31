@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-import {welcome,mydata,Child_tag,MyCounter} from './Mohammad';
+import {Mr2_user_info,Mr2_child_tag,Mr2_welcome,Mr2_user_Mark} from './RostamiFunctions/Mohammad';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
@@ -30,9 +30,12 @@ var morvarid;
 root.render(
   <React.StrictMode>
     <div >
-      {mydata().last_name}
-      <Child_tag></Child_tag>
-     <MyCounter number="20"></MyCounter>
+    
+      <Mr2_welcome></Mr2_welcome>
+      {Mr2_user_info().last_name}
+      <Mr2_child_tag></Mr2_child_tag>
+      <Mr2_user_Mark number="20"></Mr2_user_Mark>
+
       
     </div>
   </React.StrictMode>

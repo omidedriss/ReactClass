@@ -1,7 +1,7 @@
 
 import React from "react"
 
-export function mydata() {
+export function Mr2_user_info() {
     const res={
         name:"Mohammad",
         last_name:"Rostami"
@@ -11,7 +11,7 @@ export function mydata() {
     return res;
 };
 
-export function Child_tag(){
+export function Mr2_child_tag(){
     return <div>
         <welcome></welcome>
 
@@ -21,12 +21,17 @@ export function Child_tag(){
 };
 
 
-export function welcome(props)
+export function Mr2_welcome(props)
 {
-    return <div> from welcome {props.children}</div>
+    return <p > welcome to <Site_name/></p>
 }
 
-export function MyCounter(props)
+export  function Site_name()
+{
+    return " React Educatuin Website "
+}
+
+export function Mr2_user_Mark(props)
 {
 
     return <div>your mark is:{Math.floor(Math.random()*props.number)}</div>
