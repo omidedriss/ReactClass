@@ -1,0 +1,13 @@
+.tagStyle{
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.tagStyle:hover{
+    color:blue;
+    cursor: pointer;
+}
+.error{
+    color:red
+}

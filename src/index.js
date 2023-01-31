@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import ClassTrainTest from "./Component/ClassComponentTrain";
+import Learn from "./Component/TypePropstraining";
+import StateTestLearn from "./Component/StatePropsTrain";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 /////////////////////////////////// without probs
@@ -67,6 +69,9 @@ root.render(
       <Learn7 name="test props 7" />
 
       <ClassTrainTest name="Test Class Props" />
+
+      <Learn age={25} />
+      <StateTestLearn />
     </div>
   </React.StrictMode>
 );
