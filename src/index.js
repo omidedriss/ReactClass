@@ -1,23 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import{Hello,Welcome} from './component/hello'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Hello, Welcome } from "./component/hello";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const Test =(props)=>{
-  return(<div> morvarid {props.lastname}</div>)
+const Test = (props) => {
+  return <div> morvarid {props.lastname}</div>;
 };
 
-function Name(props){
-  return (<div>{props.name}{props.lastname}</div>)
+function Name(props) {
+  return (
+    <div>
+      {props.name}
+      {props.lastname}
+    </div>
+  );
 }
-const Hello2= ({name}) => <div>Hello {name}</div>
-const click=(name)=>{
-alert("hi");
-}
+const Hello2 = ({ name }) => <div>Hello {name}</div>;
+const click = (name) => {
+  alert("hi");
+};
 var omid;
 // class Hello extends Component{
 //   render(){
@@ -31,16 +36,13 @@ var zahra;
 var morvarid;
 root.render(
   <React.StrictMode>
-    
-  <div>
-    <Hello name="morvarid" age="35"/>
-  </div>
-    
-  <div>
-    <Test lastname="parhizgar"/>
-    </div>  
+    <div>
+      <Hello name="morvarid" age="35" />
+    </div>
 
-
+    <div>
+      <Test lastname="parhizgar" />
+    </div>
   </React.StrictMode>
 );
 
