@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Hello, Welcome } from "./component/hello";
+import StateTestLearn from "./component/statepropstrain";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,11 +38,12 @@ var morvarid;
 root.render(
   <React.StrictMode>
     <div>
-      <Hello name="morvarid" age="35" />
+      {/* <Hello name="morvarid" age="35" />
     </div>
 
     <div>
-      <Test lastname="parhizgar" />
+      <Test lastname="parhizgar" /> */}
+      <StateTestLearn/>
     </div>
   </React.StrictMode>
 );
