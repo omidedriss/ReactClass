@@ -4,18 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-import 
+import TypePropsTraining from './Components/TypePropsTraining';
+import Learn from './Components/TypePropsTraining';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-function Hello(props){
-  return <div>Hello {props.name}</div>
-}
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+// function Hello(props){
+//   return <div>Hello {props.name}</div>
+// }
 
 
-const Hello2= ({name}) => <div>Hello {name}</div>
-const click=(name)=>{
-alert("hi");
-}
+// const Hello2= ({name}) => <div>Hello {name}</div>
+ const click=(name)=>{
+ alert("hi");
+ }
 var omid;
 // class Hello extends Component{
 //   render(){
@@ -23,16 +24,11 @@ var omid;
 //   }
 // }
 
-var bahar;
-var milad;
-var zahra;
-var morvarid;
+
 root.render(
   <React.StrictMode>
     <div >
-      ss
-    <hello name="omid" age="35" handler={()=>click("omid")}/>
-    
+      <Learn name="Bahareh" age={39} />
     </div>
   </React.StrictMode>
 );
