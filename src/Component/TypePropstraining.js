@@ -14,6 +14,7 @@ const Learn = (props) => {
 };
 
 export default Learn;
+
 Learn.propTypes = {
   name: PropTypes.string,
   age: PropTypes.number.isRequired,

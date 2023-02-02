@@ -10,7 +10,7 @@ const StyleTraining = () => {
     console.log(name);
   };
   const myStyle = {
-    color: "red",
+    color: "blue",
     fontWeight: "bold",
   };
 
@@ -18,7 +18,7 @@ const StyleTraining = () => {
     <div>
       <p className="tagStyle">Style Learn1 {count} times</p>
       <p style={myStyle}>Style Learn2 {count} times</p>
-      <p style={{ color: "red", fontWeight: "bold" }}>
+      <p style={{ color: "yellow", fontWeight: "bold" }}>
         Style Learn3 {count} times
       </p>
       <p className={styles.tagStyle}>Style Learn4 {count} times</p>
