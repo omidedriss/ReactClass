@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import hello from './hello';
-import TypePropsTraining from './Components/TypePropsTraining';
-import Learn from './Components/TypePropsTraining';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import hello from "./hello";
+import TypePropsTraining from "./Components/TypePropsTraining";
+import Learn from "./Components/TypePropsTraining";
+import Calculator from "./Components/Calculator";
 
- const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 // function Hello(props){
 //   return <div>Hello {props.name}</div>
 // }
 
-
 // const Hello2= ({name}) => <div>Hello {name}</div>
- const click=(name)=>{
- alert("hi");
- }
+const click = (name) => {
+  alert("hi");
+};
 var omid;
 // class Hello extends Component{
 //   render(){
@@ -24,11 +24,10 @@ var omid;
 //   }
 // }
 
-
 root.render(
   <React.StrictMode>
-    <div >
-      <Learn name="Bahareh" age={39} />
+    <div>
+      <Calculator />
     </div>
   </React.StrictMode>
 );
