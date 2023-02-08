@@ -11,6 +11,7 @@ import {
   Learn3,
 } from "./Component/FunctiontrainingWithProbs_Multi_export";
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
+var milad majidi;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 /////////////////////////////////// without probs
