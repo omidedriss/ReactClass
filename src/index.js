@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var omid;
 var omid2;
+var omid3;
 root.render(
   <React.StrictMode>
     <App />
