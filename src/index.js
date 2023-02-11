@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import StateTest from './component/stateTest';
+import Milad from './component/stateTest';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var omid;
-var omid2;
-var omid3;
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Milad/>
   </React.StrictMode>
 );
 
