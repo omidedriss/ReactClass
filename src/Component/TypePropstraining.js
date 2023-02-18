@@ -4,8 +4,8 @@ const Learn = (props) => {
   return (
     <div>
       <div>
-        <p onClick={props.handler}>
-          {" "}
+        <p >
+         
           My Name is {props.name} and I {props.age} years old
         </p>
       </div>
@@ -18,8 +18,8 @@ export default Learn;
 Learn.propTypes = {
   name: PropTypes.string,
   age: PropTypes.number.isRequired,
-  handler: PropTypes.func,
+ 
 };
-Learn.defaultProps = {
+Learn.defultprops = {
   name: "Test Learn",
 };

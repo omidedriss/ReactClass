@@ -16,7 +16,7 @@ const StyleTraining = () => {
 
   return (
     <div>
-      <p className="tagStyle">Style Learn1 {count} times</p>
+      <p className=" tagStyle">Style Learn1  times</p>
       <p style={myStyle}>Style Learn2 {count} times</p>
       <p style={{ color: "yellow", fontWeight: "bold" }}>
         Style Learn3 {count} times

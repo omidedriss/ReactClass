@@ -10,41 +10,53 @@ import {
   Learn2,
   Learn3,
 } from "./Component/FunctiontrainingWithProbs_Multi_export";
+
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
-var milad majidi;
+import Test12 from "./Component/Milad";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 /////////////////////////////////// without probs
-
-// function Learn1() {
-//   return <div>Learn Test 1</div>;
+// function Milad(){
+// return<div>milad majidi</div>
 // }
+// function milad() {
+//   return <div>Learn Test 1</div>; //بدون ورودی
+// }
+// const Amir = () => {
+//   return <div> amir ALI</div>;
+// };
 
-// const Learn2 = () => {
-//   return <div>Learn Test 2</div>;
+// const milad1 = () => {
+//   return <div>Learn Test 2</div>; //arow function 
 // };
 
 // const Learn3 = () => {
 //   return (
 //     <div>
-//       {/* hello {Math.floor(Math.random()*40)} */}
 //       <div>
-//         <Learn2 />
+//         <Learn2 /> 
 //         <p>test learn 3</p>
 //       </div>
 //     </div>
-//   );
+//   ); //تو در تو
 // };
-///////////////////////////////////
+// ///////////////////////////////////
 
 ///////////////////// with probs
+// function FunctionTest(){
+//   return<div>123456789</div>;
+// }
+// const Milad =(props) =>{
+//   return <div>milad ali mohamd {props.amir()}</div>
+// }
+
 // function Learn4(props) {
 //   return (
 //     <div>
 //       Learn Test 1 {props.name} {props.age}
 //     </div>
 //   );
-// }
+//  }
 // function FunctionTest() {
 //   return <div>Learn Test props value</div>;
 // }
@@ -52,7 +64,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   return <div>Learn Test 2 {props.testF()}</div>;
 // };
 
-// const Learn6 = (props) => {
+// const ALI = (props) => {
 //   return <div>{props.children}</div>;
 // };
 
@@ -75,7 +87,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div>
-      <StyleTraining />
+  <Condition milad12={false}/>
+
+
     </div>
   </React.StrictMode>
 );
