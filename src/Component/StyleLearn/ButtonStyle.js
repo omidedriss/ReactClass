@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const nimad = styled.amir`
+const Button = styled.button`
   cursor: pointer;
   background: transparent;
   font-size: 16px;
@@ -12,4 +12,4 @@ const nimad = styled.amir`
     color: white;
   }
 `;
-export default nimad;
+export default Button;
