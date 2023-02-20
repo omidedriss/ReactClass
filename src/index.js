@@ -5,6 +5,29 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import hello from "./hello";
 
+// milad function
+function Testmilad() {
+  return <div>test milad</div>;
+}
+const Mmilad = () => {
+  return <Testmilad />;
+};
+
+function Testmilad_props(props) {
+  return (
+    <div>
+      test milad {props.name} {props.pic}
+    </div>
+  );
+}
+function Call_1() {
+  return <span>call_1</span>;
+}
+var Cc = (props) => {
+  return <div>{props.tst()}</div>;
+};
+//
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function Hello(props) {
   return <div>Hello {props.name}</div>;
@@ -34,6 +57,9 @@ root.render(
       ss
       <hello name="omid" age="35" handler={() => click("omid")} />
     </div>
+    <Testmilad_props name="alireza" pic="hotspot" />
+    <Mmilad />
+    <Cc tst={Call_1} />
   </React.StrictMode>
 );
 
