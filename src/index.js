@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import hello from "./hello";
+import Learn_1 from "./Component/Test_1";
 
 // milad function
 function Testmilad() {
@@ -60,6 +61,7 @@ root.render(
     <Testmilad_props name="alireza" pic="hotspot" />
     <Mmilad />
     <Cc tst={Call_1} />
+    <Learn_1 />
   </React.StrictMode>
 );
 
