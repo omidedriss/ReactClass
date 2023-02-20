@@ -7,7 +7,7 @@ const Condition = (props) => {
     return <h1>Please Sign Up</h1>;
   };
   let text = <Guest />;
-  if (props.milad12) {
+  if (props.isLoggedIn) {
     text = <User />;
   }
 
