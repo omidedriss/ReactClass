@@ -1,6 +1,7 @@
 
 import React from "react"
 
+import { useState } from "react"
 export function Mr2_user_info() {
     const res={
         name:"Mohammad",
@@ -36,6 +37,48 @@ export function Mr2_user_Mark(props)
 
     return <div>your mark is:{Math.floor(Math.random()*props.number)}</div>
 }
+export const MyList = (props) => {
+    const numbers = ["mohammad","reza"];
+    const listItem = numbers.map((x, index) => {
+      console.log(index);
+      return <li key={index}>{x}</li>;
+    });
+    return (
+      <div>
+        <ul>{listItem}</ul>
+      </div>
+    );
+  };
+
+
+
+export const MyButton=(props)=>{
+
+  
+    const [btn_text, setbtn_text] = useState("On");
+    let counter=0;
+    
+    const btn_click=(e)=>{
+      
+        if(e.target.value=="On")
+        {
+            setbtn_text("OFF")
+        }else
+        {
+            setbtn_text("On")
+        }
+      
+     
+    }
+
+    return(
+        <div>
+        <button className="mybutton" onClick={btn_click} value={btn_text}>{btn_text}</button>
+      
+        </div>
+    )
+}
+
 
 //export default  mydata;
 //export default  mytag;
