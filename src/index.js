@@ -13,6 +13,7 @@ import {
 import Event from "./Component/HandelingEvent";
 import List from "./Component/List";
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
+import FormSampel1 from "./Component/FormSample1";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
 /////////////////////////////////// without probs
@@ -75,9 +76,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <div>
-      <List />
-    </div>
+    <FormSampel1 />
   </React.StrictMode>
 );
 reportWebVitals();
