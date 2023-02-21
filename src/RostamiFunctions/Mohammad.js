@@ -82,7 +82,7 @@ export const MyForm=(props)=>{
 
   
     const [Txt_text, setTxt_text] = useState("mohammad");
-    const [Select_text, setSelect_text] = useState("test");
+    const [Select_text, setSelect_text] = useState("Male");
         
     const input_change=(e)=>{
       
@@ -98,8 +98,8 @@ export const MyForm=(props)=>{
     }
     const Mysubmit=(e)=>{
 
-        alert(Txt_text +"--"+Select_text)
-        
+        alert(Txt_text +" is "+Select_text)
+        e.preventDefault()
     }
 
     return(
@@ -107,8 +107,8 @@ export const MyForm=(props)=>{
         <form onSubmit={Mysubmit}>
         <input className="mybutton" onChange={input_change} value={Txt_text}></input>
         <select onChange={select_change}>
-            <option >test</option>
-            <option selected>test2</option>
+            <option >Male</option>
+            <option selected>Female</option>
         </select>
        <button type="submit">save</button>
         </form>
