@@ -78,6 +78,43 @@ export const MyButton=(props)=>{
         </div>
     )
 }
+export const MyForm=(props)=>{
+
+  
+    const [Txt_text, setTxt_text] = useState("mohammad");
+    const [Select_text, setSelect_text] = useState("test");
+        
+    const input_change=(e)=>{
+      
+        setTxt_text(e.target.value)
+       
+     
+    }
+    const select_change=(e)=>{
+      
+        setSelect_text(e.target.value)
+       
+     
+    }
+    const Mysubmit=(e)=>{
+
+        alert(Txt_text +"--"+Select_text)
+        
+    }
+
+    return(
+        <div>
+        <form onSubmit={Mysubmit}>
+        <input className="mybutton" onChange={input_change} value={Txt_text}></input>
+        <select onChange={select_change}>
+            <option >test</option>
+            <option selected>test2</option>
+        </select>
+       <button type="submit">save</button>
+        </form>
+        </div>
+    )
+}
 
 
 //export default  mydata;

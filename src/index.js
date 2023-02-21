@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-import {Mr2_user_info,Mr2_child_tag,Mr2_welcome,Mr2_user_Mark,MyList,MyButton} from './RostamiFunctions/Mohammad';
+import {Mr2_user_info,Mr2_child_tag,Mr2_welcome,Mr2_user_Mark,MyList,MyButton, MyForm} from './RostamiFunctions/Mohammad';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
@@ -37,6 +37,7 @@ root.render(
       <Mr2_user_Mark number="20"></Mr2_user_Mark>
 <MyList></MyList>
 <MyButton text="On"></MyButton>
+<MyForm></MyForm>
       
     </div>
   </React.StrictMode>
