@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import ClassTrainTest from "./Component/ClassComponentTrain";
@@ -14,6 +14,8 @@ import Event from "./Component/HandelingEvent";
 import List from "./Component/List";
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
 import FormSampel1 from "./Component/FormSample1";
+import StopWatcher from "./Component/LifeCycle";
+import CheckLifeCycle from "./Component/CheckLifeCycleTest";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
 /////////////////////////////////// without probs
@@ -76,7 +78,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <FormSampel1 />
+    <CheckLifeCycle />
   </React.StrictMode>
 );
 reportWebVitals();
