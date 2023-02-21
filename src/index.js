@@ -10,6 +10,7 @@ import {
   Learn2,
   Learn3,
 } from "./Component/FunctiontrainingWithProbs_Multi_export";
+import Event from "./Component/HandelingEvent";
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -74,7 +75,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div>
-      <StyleTraining />
+      <Event />
     </div>
   </React.StrictMode>
 );
