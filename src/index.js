@@ -11,9 +11,10 @@ import {
   Learn3,
 } from "./Component/FunctiontrainingWithProbs_Multi_export";
 import Event from "./Component/HandelingEvent";
+import List from "./Component/List";
 import StyleTraining from "./Component/StyleLearn/StyleTraining";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+//https://jsbin.com
 /////////////////////////////////// without probs
 
 // function Learn1() {
@@ -75,7 +76,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div>
-      <Event />
+      <List />
     </div>
   </React.StrictMode>
 );
