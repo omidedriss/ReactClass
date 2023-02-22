@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-
+import Button from './Component/Toggle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // function Hello(props){
@@ -28,9 +28,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div >
-    <App />
 
-     {/* <hello name="omid" age="35" handler={()=>click("omid")}/> */}
+      <Button/>
+    {/* <App />
+
+     <hello name="omid" age="35" handler={()=>click("omid")}/> */}
     </div>
   </React.StrictMode>
 );
