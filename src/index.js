@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Hello, Welcome } from "./component/hello";
+import { Hello,Welcome } from "./hello";
 import StateTestLearn from "./component/statepropstrain";
 import List from "./component/List";
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,26 +25,62 @@ const click = (name) => {
   alert("hi");
 };
 var omid;
+function Learntest1() {
+  return <div> learn test1</div>;
+}
+const Learn2 = () => {
+  return <div>learn test2 </div>;
+};
+const Learn3 = () => {
+  return (
+    <div>
+      <Learn2 />
+      <p>learn test3</p>
+    </div>
+  );
+};
 // class Hello extends Component{
 //   render(){
 //      return <div>Hello {this.props.name}</div>
 //   }
 // }
+function Learn4(props) {
+  return <div>learn test4 {props.name}</div>;
+}
+function Learn5() {
+  return <div>learn test5</div>
+}
+function Learn6(props) {
+  return <div>learn test6 {props.func()} </div>
+}
+function Learn7(props) {
+  return <div>learn test7 {props.children}</div>
+}
 
-var bahar;
-var milad;
-var zahra;
-var morvarid;
+const Learn8=(props)=>{
+  return (
+  <div>
+    <Learn2/>
+   <Learn3>
+    <p> Welcome </p>
+   </Learn3>
+   <Learn6 func={Learn5}/>
+   </div>
+  )
+};
+//////////////////////////////////////////
 root.render(
   <React.StrictMode>
     <div>
-      {/* <Hello name="morvarid" age="35" />
-    </div>
+       <Hello name="morvarid" age="35" />
+    
 
-    <div>
-      <Test lastname="parhizgar" /> */}
+    
+       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
-      <List/>
+      {/* <List/> */}
+      
+       
     </div>
   </React.StrictMode>
 );

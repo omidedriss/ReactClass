@@ -1,6 +1,7 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-const Welcome = (props)=>{
+export const Welcome = (props)=>{
   return(
       <div>
           {props.children}
@@ -8,7 +9,7 @@ const Welcome = (props)=>{
   )
 }
 
-const hello=(props)=> {
+export const Hello=(props)=> {
   return (
     <div>
      {/* hello {Math.floor(Math.random()*40)} */}
@@ -25,4 +26,4 @@ const hello=(props)=> {
   );
 }
 
-export default hello;
+
