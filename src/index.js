@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Hello,Welcome } from "./hello";
+import { Hello, Welcome } from "./hello";
 import StateTestLearn from "./component/statepropstrain";
 import List from "./component/List";
+import Learnprops from "./component/propTypesLearning";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Test = (props) => {
@@ -48,39 +50,36 @@ function Learn4(props) {
   return <div>learn test4 {props.name}</div>;
 }
 function Learn5() {
-  return <div>learn test5</div>
+  return <div>learn test5</div>;
 }
 function Learn6(props) {
-  return <div>learn test6 {props.func()} </div>
+  return <div>learn test6 {props.func()} </div>;
 }
 function Learn7(props) {
-  return <div>learn test7 {props.children}</div>
+  return <div>learn test7 {props.children}</div>;
 }
 
-const Learn8=(props)=>{
+const Learn8 = (props) => {
   return (
-  <div>
-    <Learn2/>
-   <Learn3>
-    <p> Welcome </p>
-   </Learn3>
-   <Learn6 func={Learn5}/>
-   </div>
-  )
+    <div>
+      <Learn2 />
+      <Learn3>
+        <p> Welcome </p>
+      </Learn3>
+      <Learn6 func={Learn5} />
+    </div>
+  );
 };
 //////////////////////////////////////////
 root.render(
   <React.StrictMode>
     <div>
-       <Hello name="morvarid" age="35" />
-    
+      {/* <Hello name="morvarid" age="35" /> */}
+      <Learnprops />
 
-    
-       {/* <Test lastname="parhizgar" />  */}
+      {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
       {/* <List/> */}
-      
-       
     </div>
   </React.StrictMode>
 );
