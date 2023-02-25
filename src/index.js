@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Hello, Welcome } from "./component/hello";
 import StateTestLearn from "./component/statepropstrain";
-
+import List from "./component/List";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Test = (props) => {
@@ -43,7 +43,8 @@ root.render(
 
     <div>
       <Test lastname="parhizgar" /> */}
-      <StateTestLearn/>
+      {/* <StateTestLearn/> */}
+      <List/>
     </div>
   </React.StrictMode>
 );
