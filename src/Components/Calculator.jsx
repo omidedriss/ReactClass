@@ -18,27 +18,97 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
-const handleClick = (e) => {
-  var value = e.currentTarget.value;
-  console.log(e.currentTarget.value);
-  switch (value) {
-    case "-":
-      break;
-    case "+":
-      break;
-    case "*":
-      break;
-    case "/":
-      break;
-    case ".":
-      break;
-    default:
-      break;
-  }
-};
+
 
 export default function Calculator() {
-  const [result, setResult] = useState(0);
+  
+  const show_value = () => {
+    if (result !== undefined && result !== null  ) {
+      var res=result +currentResult;
+       
+      setResult(res);
+     // console.log(res);
+      
+      // if (true) {
+      //   //alert(eval(last_result));
+      // }
+      // else {
+      //   //alert(last_result);
+      // }
+    }
+    else
+    {
+      alert('ورودی نامعتبر');
+    }
+  }
+
+  const handleClick_op = (e) => {
+    var value = e.currentTarget.value;
+    //console.log(e.currentTarget.value);
+    var res=result +currentResult;
+    switch (value) {
+      case "=":       
+        setResult(res);
+        setCurrentResult(0);   
+        setCurrentResult(show_value);       
+        break;
+      case "-":
+        // result=setResult(Number(result).toFixed(1));
+        setResult(res);
+        setResult(result+"-");
+        break;
+      case "+":
+        setResult(res);
+        setResult(result+"+");
+        break;
+      case "*":
+        setResult(res);
+        setResult(result+"*");
+        break;
+      case "/":
+        setResult(res);
+        setResult(result+"/");
+        break;
+      case ".":
+        setResult(res);
+        setResult(result+".");
+        // if (!isNaN(+value)) {
+
+        // }
+        //  var char=".";
+        //  debugger
+        //  if (!result.includes(char)) {
+        //esult=setResult(Number(result).toFixed(1));
+        // }
+        break;
+      // default:
+      //   setResult("");
+      //   break;
+    }
+  }
+
+  const handleClick_set_values = (e) => {
+    var value = e.currentTarget.value;
+    //console.log(e.currentTarget.value);
+
+   // setCurrentResult(value);     
+    
+
+
+    if (result=="") {
+      setResult(value);    
+      setCurrentResult(value);   
+      
+    }
+    else{
+      setCurrentResult(value);     
+    }
+  }
+
+
+ 
+  const [currentResult, setCurrentResult] = useState(0);
+  const [result, setResult] = useState("");
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
@@ -48,11 +118,13 @@ export default function Calculator() {
       <Grid item xs={4}>
         <Item>
           <TextField
+            step={0.01}
+focused={true}
             className="result_box_class"
             id="result_box"
             label={result}
-            variant="outlined"
-            disabled
+            variant="outlined"            
+            value={currentResult}
           />
         </Item>
         <Item>
@@ -62,7 +134,7 @@ export default function Calculator() {
             columns={{ xs: 12, sm: 12, md: 12 }}
           >
             <Grid item xs={12} sm={12} md={12} key="AC">
-              <Button className="calc_btn_class" variant="contained" key="AC">
+              <Button className="calc_btn_class" variant="contained" key="AC" onClick={() => { setResult("");setCurrentResult(0); }}>
                 AC
               </Button>
             </Grid>
@@ -77,7 +149,7 @@ export default function Calculator() {
             {Array.from(Array(10)).map((_, index) => (
               <Grid item xs={2} sm={3} md={3} key={index}>
                 <Button
-                  onClick={handleClick}
+                  onClick={handleClick_set_values}
                   className="calc_btn_class"
                   variant="contained"
                   key={index}
@@ -89,7 +161,7 @@ export default function Calculator() {
             ))}
             <Grid item xs={2} sm={3} md={3}>
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="."
@@ -101,7 +173,7 @@ export default function Calculator() {
 
             <Grid item xs={2} sm={3} md={3}>
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="+"
@@ -112,7 +184,7 @@ export default function Calculator() {
             </Grid>
             <Grid item xs={2} sm={3} md={3}>
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="-"
@@ -123,7 +195,7 @@ export default function Calculator() {
             </Grid>
             <Grid item xs={2} sm={3} md={3} key="*">
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="*"
@@ -134,7 +206,7 @@ export default function Calculator() {
             </Grid>
             <Grid item xs={2} sm={3} md={3} key="/">
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="/"
@@ -145,7 +217,7 @@ export default function Calculator() {
             </Grid>
             <Grid item xs={2} sm={3} md={3}>
               <Button
-                onClick={handleClick}
+                onClick={handleClick_op}
                 className="calc_btn_class"
                 variant="contained"
                 key="="
