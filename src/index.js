@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MycalCulator from './component/calculator'
+import Mylist from './component/mylist'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <MycalCulator></MycalCulator>
+   <MycalCulator></MycalCulator>
+  //  <Mylist></Mylist>
+
+ 
+
 );
 
 // If you want to start measuring performance in your app, pass a function

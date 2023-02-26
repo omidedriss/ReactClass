@@ -24,7 +24,7 @@ const MycalCulator = () => {
       setnum2(c);
     }
     else {
-      setnum2(num1);
+      setnum2(num1+e.target.value);
     }
     setnum1("");
     setop(e.target.value);
