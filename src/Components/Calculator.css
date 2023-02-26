@@ -1,0 +1,8 @@
+.calc_btn_class {
+  width: 100%;
+}
+.result_box_class {
+  width: 100%;
+  background-color: white;
+  border: 4px solid #000;
+}
