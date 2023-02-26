@@ -8,6 +8,7 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import "./Calculator.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: (theme.palette.mode = "#bbbcd3"),
@@ -17,7 +18,27 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
+const handleClick = (e) => {
+  var value = e.currentTarget.value;
+  console.log(e.currentTarget.value);
+  switch (value) {
+    case "-":
+      break;
+    case "+":
+      break;
+    case "*":
+      break;
+    case "/":
+      break;
+    case ".":
+      break;
+    default:
+      break;
+  }
+};
+
 export default function Calculator() {
+  const [result, setResult] = useState(0);
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
@@ -29,7 +50,7 @@ export default function Calculator() {
           <TextField
             className="result_box_class"
             id="result_box"
-            label="--"
+            label={result}
             variant="outlined"
             disabled
           />
@@ -54,16 +75,105 @@ export default function Calculator() {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {Array.from(Array(10)).map((_, index) => (
-              <Grid item xs={2} sm={4} md={4} key={index}>
+              <Grid item xs={2} sm={3} md={3} key={index}>
                 <Button
+                  onClick={handleClick}
                   className="calc_btn_class"
                   variant="contained"
                   key={index}
+                  value={index}
                 >
                   {index}
                 </Button>
               </Grid>
             ))}
+            <Grid item xs={2} sm={3} md={3}>
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="."
+                value="."
+              >
+                .
+              </Button>
+            </Grid>
+
+            <Grid item xs={2} sm={3} md={3}>
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="+"
+                value="+"
+              >
+                +
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3}>
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="-"
+                value="-"
+              >
+                -
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3} key="*">
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="*"
+                value="*"
+              >
+                *
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3} key="/">
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="/"
+                value="/"
+              >
+                /
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3}>
+              <Button
+                onClick={handleClick}
+                className="calc_btn_class"
+                variant="contained"
+                key="="
+                value="="
+              >
+                =
+              </Button>
+            </Grid>
+            {/* <Grid item xs={2} sm={3} md={3}>
+              <Button className="calc_btn_class" variant="contained" key=".">
+                .
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3}>
+              <Button className="calc_btn_class" variant="contained" key="+">
+                +
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3}>
+              <Button className="calc_btn_class" variant="contained" key="-">
+                -
+              </Button>
+            </Grid>
+            <Grid item xs={2} sm={3} md={3}>
+              <Button className="calc_btn_class" variant="contained" key="=">
+                =
+              </Button>
+            </Grid> */}
           </Grid>
         </Item>
       </Grid>
