@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
+import FormSampel1 from './Component/FormTest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props) {
@@ -31,11 +32,7 @@ var zahra;
 var morvarid;
 root.render(
   <React.StrictMode>
-    <div >
-      ss
-      <hello name="omid" age="35" handler={() => click("omid")} />
-
-    </div>
+    <FormSampel1 />
   </React.StrictMode>
 );
 
