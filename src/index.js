@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import Calculator from "./Components/Calculator.jsx";
+import FormSample from "./Components/FormSample";
+import Stopwatch from "./Components/Stopwatch";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -65,7 +67,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Calculator />
+    <Stopwatch />
   </React.StrictMode>
 );
 reportWebVitals();
