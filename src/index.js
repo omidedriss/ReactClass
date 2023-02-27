@@ -16,6 +16,11 @@ import StyleTraining from "./Component/StyleLearn/StyleTraining";
 import FormSampel1 from "./Component/FormSample1";
 import StopWatcher from "./Component/LifeCycle";
 import CheckLifeCycle from "./Component/CheckLifeCycleTest";
+// import State from "./Component/State";
+import State from "./ToggleButton";
+import MyList from "./Component/Mylist";
+import MyCalculator from "./Component/StyleLearn/MyCalculator";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
 /////////////////////////////////// without probs
@@ -78,7 +83,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Event />
+    <MyCalculator/>
   </React.StrictMode>
 );
 reportWebVitals();
