@@ -10,7 +10,7 @@ const Event = () => {
     console.log(name);
   };
   const action = (e) => {
-    e.preventDefault();
+   e.preventDefault();
     console.log("click");
   };
   const handleClick = () => {
@@ -30,6 +30,7 @@ const Event = () => {
       <input
         name="name"
         onChange={handlechange}
+        
         onFocus={() => {
           console.log("Focuse");
         }}
