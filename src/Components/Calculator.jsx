@@ -93,13 +93,13 @@ export default function Calculator() {
 
   const handleClick_set_values = (e) => {
     var value = e.currentTarget.value;
-    debugger
     var cur_res = currentResult == 0 ?  value  : currentResult + value;
-    setCurrentResult(cur_res); 
+    setCurrentResult(cur_res);
   }
 
   const [currentResult, setCurrentResult] = useState(0);
   const [result, setResult] = useState("");
+  
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
