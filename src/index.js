@@ -20,6 +20,8 @@ import CheckLifeCycle from "./Component/CheckLifeCycleTest";
 import State from "./ToggleButton";
 import MyList from "./Component/Mylist";
 import MyCalculator from "./Component/StyleLearn/MyCalculator";
+import FormSample1 from "./Component/FormSample1";
+import MyForm from "./Component/StyleLearn/MyForm";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -83,7 +85,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <MyCalculator/>
+    <MyForm/>
   </React.StrictMode>
 );
 reportWebVitals();

@@ -16,7 +16,7 @@ const MyCalculator = () => {
 
   return (
     <div>
-      <p className="container ">Hooman Calculation</p>
+      <p className="container      ">Hooman Calculation</p>
       {/* <p style={myStyle}>Style Learn2 {count} times</p> */}
       {/* <p style={{ color: "yellow", fontWeight: "bold" }}>
         Style Learn3 {count} times
