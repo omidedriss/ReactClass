@@ -31,7 +31,7 @@ const NewStudent = (props) => {
       />
       <label>ایمیل</label>
       <input type="email" value={studentEmail} onChange={studentEmailHandler} />
-      <ButtonApp btnType="add" add={props.add} text="اضافه" ></ButtonApp>
+      <ButtonApp btnType="add" delete={props.add} text="اضافه" ></ButtonApp>
       
     </div>
   );

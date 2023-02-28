@@ -42,6 +42,8 @@ const stadd=()=>{
     phoneNumber: studentPhoneNumber,
     email: studentPhoneNumber,
   });
+
+  console.log(newStudentsState);
   setStudents(newStudentsState);
 
 }
