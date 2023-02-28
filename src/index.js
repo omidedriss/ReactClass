@@ -17,9 +17,9 @@ import FormSampel1 from "./Component/FormSample1";
 import StopWatcher from "./Component/LifeCycle";
 import CheckLifeCycle from "./Component/CheckLifeCycleTest";
 import Calculator from "./Component/Proje/Calculator";
-// import StudentsComponent from "./Component/SampleStudent/StudentsComponents1";
+import StudentsComponent from "./Component/SampleStudent/StudentsComponents1";
 
-import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
+// import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
 /////////////////////////////////// without probs
