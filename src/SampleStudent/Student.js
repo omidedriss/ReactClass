@@ -7,7 +7,7 @@ const Student = (props) => {
     <div className="students">
       <label>شماره دانش آموزی :{props.id}</label>
       <label>نام و نام خانوادگی</label>
-      <input type="text" value={props.name} onChange={props.nameChanged} />
+      <input type="text" value={props.name}  />
 
       <label>کلاس</label>
       <input type="text" value={props.classNumber} />

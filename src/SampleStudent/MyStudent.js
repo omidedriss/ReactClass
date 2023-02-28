@@ -1,12 +1,15 @@
 import React from "react";
 import Student from "./Student";
 const MyStudents = (props) => {
-  let info=["Mohammad","Rostami"];
+  
    
-
-     let students = info.map((student, index) => (
+   
+     let students = props.studentsList.map((student, index) => (
+        
         <Student>
-       
+        
+        name={student.name}
+     
         </Student>
    ));
    return students
