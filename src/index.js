@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MycalCulator from './component/calculator'
 import Mylist from './component/mylist'
+import Myform from './component/myform';
+import Student  from './component/student';
+import Students from './component/students';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <MycalCulator></MycalCulator>
+  //  <MycalCulator></MycalCulator>
   //  <Mylist></Mylist>
-
- 
+  // <Myform></Myform>
+  <Students></Students>
 
 );
 
