@@ -33,11 +33,16 @@ const Student_list = () => {
         email: "info@gmail.com",
       },
     ]);
+    const deleteStudent = (index) => {
+        const students = [...studentsState];
+        students.splice(index, 1);
+        setStudents(students);
+      };
     return(
 <div>
     <MyStudents
     studentsList={studentsState}
-    //Delete={mydelete}
+    delete={deleteStudent}
    
   />
   </div>

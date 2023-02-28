@@ -5,12 +5,10 @@ const MyStudents = (props) => {
    
    
      let students = props.studentsList.map((student, index) => (
-        
-        <Student>
-        
+        <Student
         name={student.name}
-     
-        </Student>
+        deleted={props.deleted}
+       />
    ));
    return students
   
