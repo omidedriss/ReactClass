@@ -19,10 +19,10 @@ const Student = (props) => {
       <input type="email" value={props.email} />
 
       <label>
-        <Button btnType="danger" clicked={props.deleted}>
+        <Button btnType="danger" clicked={props.delete}>
           حذف
         </Button>
-        <MyButton type={0} clicked={props.deleted}></MyButton>
+        <MyButton type={0} clicked={props.delete}></MyButton>
       </label>
     </div>
   );

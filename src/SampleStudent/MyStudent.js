@@ -7,7 +7,7 @@ const MyStudents = (props) => {
      let students = props.studentsList.map((student, index) => (
         <Student
         name={student.name}
-        deleted={props.deleted}
+        delete={props.delete}
        />
    ));
    return students
