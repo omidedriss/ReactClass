@@ -16,7 +16,7 @@ const ButtonApp=(props)=>{
           
            
       return(
-        <button className={btnclass}>حذف</button>
+        <button  type='button' className={btnclass} onClick={props.delete}>{props.text}</button>
     );
     
    

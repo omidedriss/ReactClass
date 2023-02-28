@@ -3,11 +3,8 @@ import './btnclass.css';
 import Student from './student';
 
 const Students=(props)=>{
-let starray=[
-{},{}
 
-];
-let students = starray.map((student, index) => (
+let students = props.studentsList.map((student, index) => (
     <Student
       key={index}
       id={student.id}
@@ -16,7 +13,8 @@ let students = starray.map((student, index) => (
       phoneNumber={student.phoneNumber}
       email={student.email}
       nameChanged={(event) => props.nameChanged(event, student.id)}
-      deleted={props.deleted}
+      delete={props.delete}
+      add={props.add}
     />
   ));
   

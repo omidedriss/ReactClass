@@ -8,13 +8,14 @@ import Mylist from './component/mylist'
 import Myform from './component/myform';
 import Student  from './component/student';
 import Students from './component/students';
+import StudentsComponent from './component/studentcomponent'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //  <MycalCulator></MycalCulator>
   //  <Mylist></Mylist>
   // <Myform></Myform>
-  <Students></Students>
+  <StudentsComponent></StudentsComponent>
 
 );
 
