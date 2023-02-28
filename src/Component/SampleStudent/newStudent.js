@@ -13,7 +13,7 @@ const NewStudent = (props) => {
     <div className="NewPost">
       <h1>اضافه کردن دانش آموز جدید</h1>
       <label>نام و نام خانوادگی</label>
-      <input type="text" value={studentName} onChange={studentNameHandler} />
+      <input type="text" value={studentName} onChange={props.studentNameHandler} />
       <label>کلاس</label>
       <input
         type="number"
