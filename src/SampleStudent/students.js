@@ -4,9 +4,11 @@ import "./studentStyle.css";
 import PropTypes from "prop-types";
 
 const Students = (props) => {
+  
   useEffect(() => {
     // console.log(props.studentsList);
   }, [props.studentsList]);
+
   let students = props.studentsList.map((student, index) => (
     <Student
       key={index}

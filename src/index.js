@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 import {Mr2_user_info,Mr2_child_tag,Mr2_welcome,Mr2_user_Mark,MyList,MyButton, MyForm} from './RostamiFunctions/Mohammad';
 import Calc_Body from './Component/Calc_Body';
-import Student from './SampleStudent/Student';
+import MyStudents from './SampleStudent/MyStudent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
   return <div>Hello {props.name}</div>
@@ -42,7 +42,8 @@ root.render(
  <div className='mydiv'>
       <br/>
     <Calc_Body/>
-    <Student></Student>
+    
+    <MyStudents></MyStudents>
     </div>
       
     </div>
