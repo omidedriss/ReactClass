@@ -1,0 +1,52 @@
+.table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.myinput
+{
+    border-radius: 10px;
+    height: 20px;
+}
+.mylabel
+{
+   width: 100%;
+    height: 20px;
+    border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  
+}
+.mybutton
+{
+    width: 100%;
+    height: 100%;
+    border: 0ch;
+    background-color: lightblue;
+    padding: 10px 10px;
+    border-radius: 25px;
+    
+}
+.mybutton:active {
+    
+    background-color: red;
+    
+}
+.mybutton:hover {
+
+    
+    font-weight: bolder;
+   
+    
+    
+}
+
+.mydiv{
+    text-align: center;
+    width: 100%;
+  
+    
+   
+}

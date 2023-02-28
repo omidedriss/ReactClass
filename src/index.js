@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 import {Mr2_user_info,Mr2_child_tag,Mr2_welcome,Mr2_user_Mark,MyList,MyButton, MyForm} from './RostamiFunctions/Mohammad';
-
+import Calc_Body from './Component/Calc_Body';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
   return <div>Hello {props.name}</div>
@@ -31,13 +31,17 @@ root.render(
   <React.StrictMode>
     <div >
     
-      <Mr2_welcome></Mr2_welcome>
+      {/* <Mr2_welcome></Mr2_welcome>
       {Mr2_user_info().last_name}
       <Mr2_child_tag></Mr2_child_tag>
       <Mr2_user_Mark number="20"></Mr2_user_Mark>
 <MyList></MyList>
 <MyButton text="On"></MyButton>
-<MyForm></MyForm>
+<MyForm></MyForm> */}
+ <div className='mydiv'>
+      <br/>
+    <Calc_Body/>
+    </div>
       
     </div>
   </React.StrictMode>
