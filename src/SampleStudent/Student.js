@@ -22,7 +22,7 @@ const Student = (props) => {
         <Button btnType="danger" clicked={props.deleted}>
           حذف
         </Button>
-        <MyButton type={"Success"}></MyButton>
+        <MyButton type={0}></MyButton>
       </label>
     </div>
   );

@@ -1,22 +1,15 @@
 import "./button.css"
 const MyButton = (props) => {
 
-    
+    const numbers = ["Success","Danger"];
 
-    if(props.type=="Success")
-    {
+   
         return(
-            <button className="Success">test</button>
+            <button className={numbers[props.type]}>test</button>
         );
-    }
-    else if(props.type=="Danger")
-    {
-    return(
-        <button className="Danger" >test</button>
-    )
-}
-
-
     
+  
 }
+    
+
 export default MyButton;
