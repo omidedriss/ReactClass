@@ -8,6 +8,7 @@ const MyStudents = (props) => {
         <Student
         name={student.name}
         delete={props.delete}
+        add={props.add}
        />
    ));
    return students

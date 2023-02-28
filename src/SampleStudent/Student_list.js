@@ -38,12 +38,15 @@ const Student_list = () => {
         students.splice(index, 1);
         setStudents(students);
       };
+      const add = (index) => {
+       alert("test")
+      };
     return(
 <div>
     <MyStudents
     studentsList={studentsState}
     delete={deleteStudent}
-   
+   add={add}
   />
   </div>
     )
