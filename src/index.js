@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 import Button from './Component/Toggle';
+import StopWatch from './Component/useEffect';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // function Hello(props){
@@ -26,15 +27,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // var morvarid;
 
 root.render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <div >
 
-      <Button/>
-    {/* <App />
-
-     <hello name="omid" age="35" handler={()=>click("omid")}/> */}
+      <StopWatch/>
+    
     </div>
-  </React.StrictMode>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
