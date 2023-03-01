@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 import Button from './Component/Toggle';
 import StopWatch from './Component/useEffect';
+import Student from './Component/student';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // function Hello(props){
@@ -30,7 +31,7 @@ root.render(
   //<React.StrictMode>
     <div >
 
-      <StopWatch/>
+      <Student/>
     
     </div>
   //</React.StrictMode>
