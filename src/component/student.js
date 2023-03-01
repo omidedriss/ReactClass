@@ -24,9 +24,7 @@ const Student=(props)=>{
       <label>
        <ButtonApp btnType="delete" delete={props.delete} text="حذف"></ButtonApp>
       </label>
-      <label>
-       <ButtonApp btnType="add" delete={props.add} text="اضافه" ></ButtonApp>
-      </label>
+      
     </div>
     )
 }

@@ -26,6 +26,14 @@
 
 }
 
+.NewPost button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    width: 10%;
+    height:35px;
+}
 
 .NewPost button:hover,
 .NewPost button:active {

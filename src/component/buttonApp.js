@@ -3,23 +3,24 @@ import './btnclass.css';
 
 const ButtonApp=(props)=>{
 
-    const[btnclass,setbtnclass]=useState("Danger");
-
-    // if(props.btnType=="add")
-    // {
-    //       setbtnclass("Success");
-    // }
-    // else  if(props.btnType=="delete")
-    // {
-    //       setbtnclass("Danger");
-    // }    
-          
-           
+      
+  let classes = [""];
+  switch (props.btnType) {
+    case "delete":
+      classes.push("Danger");
+      break;
+    case "add":
+      classes.push("Success");
+      break;
+    default:
+      break;
+  }      
       return(
-        <button  type='button' className={btnclass} onClick={props.delete}>{props.text}</button>
+        <button  className={classes.join(" ")} onClick={props.delete}>{props.text}</button>
     );
     
    
 };
 
 export default ButtonApp
+
