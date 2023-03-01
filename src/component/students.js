@@ -14,7 +14,7 @@ let students = props.studentsList.map((student, index) => (
       email={student.email}
       nameChanged={(event) => props.nameChanged(event, student.id)}
       delete={props.delete}
-      add={props.add}
+    
     />
   ));
   
