@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 //import './index.css';
 import App from './App';
 
-import Button from './Component/Toggle';
+//import Button from './Component/Toggle';
 import StopWatch from './Component/useEffect';
 import Student from './Component/student';
 
