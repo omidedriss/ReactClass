@@ -7,6 +7,8 @@ import { Hello, Welcome } from "./hello";
 import StateTestLearn from "./component/statepropstrain";
 import List from "./component/List";
 import Learnprops from "./component/propTypesLearning";
+import stopWatcher from "./component/Life sycle";
+import STUDENT from "./component/Student";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -75,7 +77,7 @@ root.render(
   <React.StrictMode>
     <div>
       {/* <Hello name="morvarid" age="35" /> */}
-      <Learnprops />
+       <STUDENT name="مروارید پرهیزکار"  classNum="aval" />
 
       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
