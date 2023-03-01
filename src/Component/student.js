@@ -1,3 +1,4 @@
+import "./student.css";
 
 const Student=()=>{
 return(<div>
@@ -10,7 +11,7 @@ return(<div>
 <input type="number"></input>
 <label>ایمیل</label>
 <input type="email"></input>
-<button>حذف</button>
+<button btnType="danger">حذف</button>
 </div>)
 }
 
