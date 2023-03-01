@@ -8,6 +8,7 @@ import TypePropsTraining from "./Components/TypePropsTraining";
 import Learn from "./Components/TypePropsTraining";
 import Calculator from "./Components/Calculator";
 import StopWatcher from "./Components/LifeCycle";
+import Student from "./Components/Student/Student";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // function Hello(props){
@@ -28,7 +29,7 @@ var omid;
 root.render(
   <React.StrictMode>
     <div>
-      <StopWatcher />
+      <Student />
     </div>
   </React.StrictMode>
 );
