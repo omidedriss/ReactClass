@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
 //import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import hello from './hello';
+
 import Button from './Component/Toggle';
 import StopWatch from './Component/useEffect';
 import Student from './Component/student';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // function Hello(props){

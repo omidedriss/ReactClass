@@ -1,7 +1,7 @@
 import "./student.css";
 
 const Student=()=>{
-return(<div>
+return(<div className="students">
 <label>شماره دانشجویی:</label>
 <label>نام و نام خانوادگی:</label>
 <input type="text"></input>
