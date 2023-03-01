@@ -7,6 +7,7 @@ import hello from "./hello";
 import TypePropsTraining from "./Components/TypePropsTraining";
 import Learn from "./Components/TypePropsTraining";
 import Calculator from "./Components/Calculator";
+import StopWatcher from "./Components/LifeCycle";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // function Hello(props){
@@ -27,7 +28,7 @@ var omid;
 root.render(
   <React.StrictMode>
     <div>
-      <Calculator />
+      <StopWatcher />
     </div>
   </React.StrictMode>
 );
