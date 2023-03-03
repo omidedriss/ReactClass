@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
-import Student from './Component/StudentComponent';
+import Students from './Component/StudentsList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
@@ -16,7 +16,7 @@ const Hello2= ({name}) => <div>Hello {name}</div>
 const click=(name)=>{
 alert("hi");
 }
-var omid;
+
 // class Hello extends Component{
 //   render(){
 //      return <div>Hello {this.props.name}</div>
@@ -25,7 +25,7 @@ var omid;
 
 root.render(
   <React.StrictMode>
-    <Student />
+    <Students />
     </React.StrictMode>
 );
 
