@@ -74,7 +74,7 @@ export const App = () => {
                 {lastOperation}
               </div>
             </div>
-            <div class="card-body">
+            <div className="card-body">
               <div className='row'>
                 <button className="w-25 btn btn-primary btn-lg border border-secondary" onClick={() => { btnNum("7"); }}>7</button>
                 <button className="w-25 btn btn-primary btn-lg border border-secondary" onClick={() => { btnNum("8"); }}>8</button>
