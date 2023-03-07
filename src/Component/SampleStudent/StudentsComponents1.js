@@ -55,6 +55,7 @@ const StudentsComponent = () => {
   const deleteStudent = (index) => {
     const students = [...studentsState];
     students.splice(index, 1);
+    //studentsState.splice(index,1);
     setStudents(students);
   };
 
