@@ -40,7 +40,7 @@ const stadd=()=>{
     name: studentName,
     classNumber: studentClass,
     phoneNumber: studentPhoneNumber,
-    email: studentPhoneNumber,
+    email: studentEmail,
   });
 
   console.log(newStudentsState);
@@ -96,7 +96,7 @@ const stadd=()=>{
 
 
     <Students
-        studentsList={studentsState} delete={stdelete} add={stadd}></Students>
+        studentsList={studentsState} delete={stdelete} ></Students>
         </div>
   )
 
