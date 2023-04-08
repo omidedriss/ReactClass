@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Toolbar.css";
 import Logo from "./Logo";
-import MenuItems from "../header/MenuItems";
+// import MenuItems from "../header/MenuItems";
+import MenuItems from "../header/MenuItemsRouter";
 import Button from "../SampleStudent/ButtonApp";
 import Modal from "../modal/Modal";
 import SignIn from "../header/signIn";
@@ -39,7 +40,7 @@ const Toolbar = (props) => {
         </Button>
       </span>
 
-      <Modal show={showModal}>
+      <Modal show={showModal} modalClosed={modalClosed}>
         <SignIn />
       </Modal>
     </header>

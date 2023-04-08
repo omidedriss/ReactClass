@@ -20,6 +20,7 @@ import Calculator from "./Component/Proje/Calculator";
 import StudentsComponent from "./Component/SampleStudent/StudentsComponents1";
 import Toolbar from "./Component/header/Toolbar";
 import SideDrawer from "./Component/header/SideDrawer";
+import App from "./App";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -83,8 +84,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Toolbar />
-    <StudentsComponent />
+    <App />
   </React.StrictMode>
 );
 reportWebVitals();
