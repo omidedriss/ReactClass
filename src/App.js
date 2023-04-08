@@ -40,9 +40,18 @@ const App = () => {
                   </main>
                 }
               />
+
               <Route path=":invoicId" element={<Invoice />} />
             </Route>
             {/* <Route render={() => <h1>not Found</h1>} /> */}
+            <Route
+              path="*"
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Theres nothing here</p>
+                </main>
+              }
+            />
           </Routes>
         </div>
       </div>
