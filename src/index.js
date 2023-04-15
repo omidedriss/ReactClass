@@ -27,6 +27,7 @@ import RouterTwoLearnwithRouterSimple from "./Component/Router/RouterTwoLearnwit
 import RouterThreeLearnwithNestedRouter from "./Component/Router/RouterThreeLearnwithNestedRouter";
 import RouterFourLearnwithListLinkAndShow from "./Component/Router/RouterFourLearnwithListLinkAndShow";
 import RouterFiveLearnwithParamRoute from "./Component/Router/RouterFiveLearnwithParamRoute";
+import APIFirstCode from "./Component/API/APIFirstCode";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -91,7 +92,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <RouterFiveLearnwithParamRoute />
+      <APIFirstCode />
     </BrowserRouter>
   </React.StrictMode>
 );
