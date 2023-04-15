@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import ClassTrainTest from "./Component/ClassComponentTrain";
 import Learn from "./Component/TypePropstraining";
 import Condition from "./Component/ConditionTrarining";
@@ -21,6 +22,11 @@ import StudentsComponent from "./Component/SampleStudent/StudentsComponents1";
 import Toolbar from "./Component/header/Toolbar";
 import SideDrawer from "./Component/header/SideDrawer";
 import App from "./App";
+import RouterLinkFirstLearnWithLocationAndParam from "./Component/Router/RouterLinkFirstLearnWithLocationAndParam";
+import RouterTwoLearnwithRouterSimple from "./Component/Router/RouterTwoLearnwithRouterSimple";
+import RouterThreeLearnwithNestedRouter from "./Component/Router/RouterThreeLearnwithNestedRouter";
+import RouterFourLearnwithListLinkAndShow from "./Component/Router/RouterFourLearnwithListLinkAndShow";
+import RouterFiveLearnwithParamRoute from "./Component/Router/RouterFiveLearnwithParamRoute";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -84,7 +90,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <RouterFiveLearnwithParamRoute />
+    </BrowserRouter>
   </React.StrictMode>
 );
 reportWebVitals();
