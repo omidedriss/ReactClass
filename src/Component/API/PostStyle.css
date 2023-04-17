@@ -1,0 +1,43 @@
+.Posts{
+    width:80%;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Posts label{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold
+}
+.Posts input{
+    width:80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    direction: rtl
+}
+input[type=number],input[type=email]{
+    direction: ltr
+}
+.Post-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width:80%;
+    margin:auto
+}
+.search-bar{
+    width:90%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+@media(min-width:500px){
+    .Posts{
+        width:450px;
+    }
+}

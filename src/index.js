@@ -28,6 +28,11 @@ import RouterThreeLearnwithNestedRouter from "./Component/Router/RouterThreeLear
 import RouterFourLearnwithListLinkAndShow from "./Component/Router/RouterFourLearnwithListLinkAndShow";
 import RouterFiveLearnwithParamRoute from "./Component/Router/RouterFiveLearnwithParamRoute";
 import APIFirstCode from "./Component/API/APIFirstCode";
+import APITwoCodeWithShowAndLoadingAndChange from "./Component/API/APITwoCodeWithShowAndLoadingAndChange";
+import APIThreeWithEditePostDelet from "./Component/API/APIThreeWithEditePostDelet.js";
+import APIFourWithErrorLocalAndGlobalHandel from "./Component/API/APIFourWithErrorLocalAndGlobalHandel";
+import axios from "axios";
+import APIFiveWithSpinerAndGlobalConfig from "./Component/API/APIFiveWithSpinerAndGlobalConfig";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //https://jsbin.com
@@ -88,11 +93,31 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   );
 // };
 /////////////////////
+axios.defaults.baseURL = "https://jsonplaceholder.ir";
+axios.defaults.headers.post["Contetnt-Type"] = "application/json";
+axios.interceptors.request.use(
+  (request) => {
+    console.log(request);
+    return request;
+  },
+  (error) => {
+    console.log(error);
+  }
+);
+axios.interceptors.response.use(
+  (response) => {
+    console.log(response);
+    return response;
+  },
+  (error) => {
+    console.log(error);
+  }
+);
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <APIFirstCode />
+      <APIFiveWithSpinerAndGlobalConfig />
     </BrowserRouter>
   </React.StrictMode>
 );

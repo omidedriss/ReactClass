@@ -3,17 +3,12 @@ import axios from "axios";
 const APIFirstCode = (props) => {
   const [PostsState, setPostsState] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.ir/posts")
-      .then((response) => {
-        console.log(response.data);
-        const posts = response.data;
+    axios.get("https://jsonplaceholder.ir/posts").then((response) => {
+      console.log(response.data);
+      const posts = response.data;
 
-        setPostsState(posts);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      setPostsState(posts);
+    });
 
     // fetch("https://jsonplaceholder.ir/posts")
     //   .then((response) => {
@@ -24,9 +19,6 @@ const APIFirstCode = (props) => {
     //       setPostsState(posts);
     //     });
     //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
   }, []);
   //https://github.com/moharnadreza/jsonplaceholder
   //https://github.com/axios/axios
