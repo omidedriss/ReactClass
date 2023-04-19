@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 //import './index.css';
-import App from './App';
+//import App from './App';
 
 //import Button from './Component/Toggle';
 //import StopWatch from './Component/useEffect';
-import StudentsComponent from './Component/StudentsComponents1';
+import Studentscomponents1 from './Component/Studentscomponents1';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

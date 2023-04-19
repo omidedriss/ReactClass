@@ -37,7 +37,9 @@ const StudentsComponent = () => {
   return(
     <Students
         studentsList={studentsState}
-        //toggle={toggle}
-        />
+    />
+
+        
   );
 }
+export default React.memo(StudentsComponent);
