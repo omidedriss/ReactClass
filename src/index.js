@@ -7,6 +7,8 @@ import App from './App';
 //import Button from './Component/Toggle';
 import StopWatch from './Component/useEffect';
 import Student from './Component/student';
+import students from './Component/students';
+import StudentsComponent from './Component/StudentComponents1';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,7 +35,7 @@ root.render(
   //<React.StrictMode>
     <div >
 
-      <Student/>
+      <StudentsComponent/>
     
     </div>
   //</React.StrictMode>

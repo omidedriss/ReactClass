@@ -3,6 +3,7 @@ import Student from "./Student";
 import "./studentStyle.css";
 import PropTypes from "prop-types";
 
+const Students = (props) => {
 let students = props.studentsList.map((student, index) => (
     <Student
       key={index}
