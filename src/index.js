@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import hello from './hello';
 import Students from './Component/StudentsList';
+import Students from './Component/StudentComponentent';
+import Student from './Component/StudentComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Hello(props){
@@ -25,8 +27,9 @@ alert("hi");
 
 root.render(
   <React.StrictMode>
-    <Students />
-    </React.StrictMode>
+    <Student />
+  </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,13 +1,14 @@
 import React from "react";
 import "./StudentStyle.css"
+
 const Student =(Props) =>{
     return(
         <div className="students">
             <label>شماره دانشجویی:</label>
-            <input type="text" value={Props.id} />
+            <input type="number" value={Props.id} />
 
             <label>نام:</label>
-            <input type="text" value={Props.name} />
+            <input type="text" value={Props.name} onChange={Props.nameChanged}/>
 
             
             <label>نام خانوادگی:</label>
@@ -19,13 +20,18 @@ const Student =(Props) =>{
 
             
             <label>شماره تلفن:</label>
-            <input type="number" value={Props.tel} />
+            <input type="number" value={Props.phoneNumber} />
 
             
             <label>ایمیل:</label>
             <input type="email" value={Props.email} />
 
-            <input type="button" value="delete"/>
+            <label>
+                <Button btnType="danger" clicked={Props.deleted}>
+                    حذف
+                </Button>
+            </label>
+
         </div>
     ); 
 };
