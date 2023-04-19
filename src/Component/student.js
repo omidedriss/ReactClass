@@ -1,5 +1,8 @@
 import "./student.css";
-import  Button from"./button.css";
+import  Button from ButtonApp;
+
+
+
 const Student=()=>{
 return(<div className="students">
 <label>شماره دانشجویی:</label>
