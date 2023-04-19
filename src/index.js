@@ -9,6 +9,7 @@ import List from "./component/List";
 import Learnprops from "./component/propTypesLearning";
 import STUDENT from "./component/Student";
 import Textboxstyle from "./component/Style";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Test = (props) => {
