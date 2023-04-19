@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Students from "./students";
-import NewStudent from "./newStudent";
+//import NewStudent from "./newStudent";
+
 const StudentsComponent = () => {
   const [studentsState, setStudents] = useState([
     {
@@ -36,7 +37,7 @@ const StudentsComponent = () => {
   return(
     <Students
         studentsList={studentsState}
-        toggle={toggle}
+        //toggle={toggle}
         />
   );
 }
