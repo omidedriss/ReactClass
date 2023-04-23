@@ -22,6 +22,7 @@ export default Students;*/
 
 import React, { useEffect } from "react";
 import Student from "./StudentComponent";
+
 import "./StudentStyle.css";
 import PropTypes from "prop-types";
 
@@ -29,7 +30,7 @@ const Students = (props) => {
   useEffect(() => {
     // console.log(props.studentsList);
   }, [props.studentsList]);
-  let students = props.studentsList.map((student, index) => (
+  let Students = props.studentsList.map((student, index) => (
     <Student
       key={index}
       id={student.id}
@@ -42,14 +43,8 @@ const Students = (props) => {
     />
   ));
   if (props.toggle) {
-    return <div className="student-section">{students}</div>;
+    return <div className="student-section">{Students}</div>;
   }
-  return students;
+  return Students;
 };
 export default React.memo(Students);
-Students.propTypes = {
-  studentsList: PropTypes.array.isRequired,
-  nameChanged: PropTypes.func.isRequired,
-  deleted: PropTypes.func.isRequired,
-  toggle: PropTypes.bool.isRequired,
-};

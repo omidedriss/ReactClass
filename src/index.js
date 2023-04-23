@@ -3,31 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import hello from './hello';
-import Students from './Component/StudentsList';
-import Students from './Component/StudentComponentent';
-import Student from './Component/StudentComponent';
+
+import StudentsData from './Component/StudentsData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-function Hello(props){
-  return <div>Hello {props.name}</div>
-}
-
-
-const Hello2= ({name}) => <div>Hello {name}</div>
-const click=(name)=>{
-alert("hi");
-}
-
-// class Hello extends Component{
-//   render(){
-//      return <div>Hello {this.props.name}</div>
-//   }
+// function Hello(props){
+//   return <div>Hello {props.name}</div>
 // }
+
+
+// const Hello2= ({name}) => <div>Hello {name}</div>
+// const click=(name)=>{
+// alert("hi");
+// }
+
+// // class Hello extends Component{
+// //   render(){
+// //      return <div>Hello {this.props.name}</div>
+// //   }
+// // }
 
 root.render(
   <React.StrictMode>
-    <Student />
+    <StudentsData />
   </React.StrictMode>
   
 );
