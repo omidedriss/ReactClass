@@ -33,8 +33,25 @@ import APIThreeWithEditePostDelet from "./Component/API/APIThreeWithEditePostDel
 import APIFourWithErrorLocalAndGlobalHandel from "./Component/API/APIFourWithErrorLocalAndGlobalHandel";
 import axios from "axios";
 import APIFiveWithSpinerAndGlobalConfig from "./Component/API/APIFiveWithSpinerAndGlobalConfig";
+import SignIn from "./Component/Context/signIn";
+import SignInWithValidate from "./Component/Context/signInTwoWithValidate";
+import SignInThreeWithHttpRequest from "./Component/Context/signInThreeWithHttpRequest";
+import AuthContextFirst from "./Component/Context/authContextFirst";
+import SignInFourWithContext from "./Component/Context/signInFourWithContext";
+// import AuthContextProvider from "./Component/Context/authContextTwo";
+// import AuthContextProvider from "./Component/Context/authContextThree";
+// import AuthContextProvider from "./Component/Context/authContextFour";
+import AuthContextProvider from "./Component/Context/authContextFive";
+
+import ThemeContextProvider from "./Component/Context/themeContext";
+import SignInFiveWithContextAndRequest from "./Component/Context/signInFiveWithContextAndRequest";
+import SignInSixWithContextAndLogout from "./Component/Context/signInSixWithContextAndLogout";
+import SignInSevenWithContextAndTheme from "./Component/Context/signInSevenWithContextAndTheme";
+import SignInEightWithContextAndReducer from "./Component/Context/signInEightWithContextAndReducer";
+import SignInNineWithContextAndLocalStorage from "./Component/Context/signInNineWithContextAndLocalStorage";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 //https://jsbin.com
 /////////////////////////////////// without probs
 
@@ -117,7 +134,13 @@ axios.interceptors.response.use(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <APIFiveWithSpinerAndGlobalConfig />
+      <ThemeContextProvider>
+        {/* <AuthContextFirst.Provider value={{ authetication: false }}> */}
+        <AuthContextProvider>
+          <SignInNineWithContextAndLocalStorage />
+        </AuthContextProvider>
+      </ThemeContextProvider>
+      {/* </AuthContextFirst.Provider> */}
     </BrowserRouter>
   </React.StrictMode>
 );
