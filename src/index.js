@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 //import Button from './Component/Toggle';
 //import StopWatch from './Component/useEffect';
-import Studentscomponents1 from './Component/Studentscomponents1';
+import StudentsComponent from './Component/StudentsComponents1';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
