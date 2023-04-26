@@ -1,11 +1,11 @@
 import React from "react";
 import Textboxstyle from "./Style";
-import "./style.css";
+import "./StudentStyle.css";
 
 const STUDENT = (props) => {
-  return <div >
+  return <div className="students" >
     <label >نام و نام خانوادگی:</label>
-    <input className="inputstyle" type="text" id="t1" value={props.name} onchange={props.namechange} />
+    <input  value={props.name} onChange={props.onChangehandle} />
     <br></br>
     <lable>کلاس:</lable>
     <input type="text" value={props.classNum} />
@@ -17,7 +17,7 @@ const STUDENT = (props) => {
     <label>ایمیل:</label>
     <input type="email" value={props.email} />
     <br></br>
-    <button >ثبت نام</button>
+    <button onClick={props.add}>ثبت نام</button>
   </div>
    
 };
