@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Toolbar from './Component/header/Toolbar';
+import Toolbar from './header/Toolbar';
 //import './index.css';
 //import App from './App';
 
@@ -31,13 +31,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // var morvarid;
 
 root.render(
-  //<React.StrictMode>
+ <React.StrictMode>
     <div >
-
       <Toolbar/>
     
     </div>
-  //</React.StrictMode>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

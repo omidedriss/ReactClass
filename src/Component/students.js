@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Student from "./Student";
+import Student from "./student";
 import "./studentStyle.css";
 import PropTypes from "prop-types";
 

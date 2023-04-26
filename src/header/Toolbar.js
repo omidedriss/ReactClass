@@ -1,4 +1,5 @@
-import React,{} from "react";
+import React from "react";
+import Logo from "./logo";
 import "./toolbar.css";
 
 const Toolbar = ()=>{
@@ -11,4 +12,4 @@ const Toolbar = ()=>{
 </div>
     )
 }
-export default react.memo(Toolbar);
+export default Toolbar;
