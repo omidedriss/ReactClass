@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import Toolbar from './Component/header/Toolbar';
 //import './index.css';
 //import App from './App';
 
@@ -33,7 +34,7 @@ root.render(
   //<React.StrictMode>
     <div >
 
-      <StudentsComponent/>
+      <Toolbar/>
     
     </div>
   //</React.StrictMode>
