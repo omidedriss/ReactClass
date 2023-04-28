@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./ButtonApp";
-
 import "./StudentStyle.css"
 
 const Student =(Props) =>{

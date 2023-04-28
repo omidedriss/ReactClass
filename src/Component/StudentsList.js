@@ -22,7 +22,6 @@ export default Students;*/
 
 import React, { useEffect } from "react";
 import Student from "./StudentComponent";
-
 import "./StudentStyle.css";
 import PropTypes from "prop-types";
 
