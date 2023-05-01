@@ -11,8 +11,17 @@ import STUDENT from "./component/Student";
 import Textboxstyle from "./component/Style";
 import Studensts from "./component/Students";
 import Students from "./component/Students";
+import Toolbar from "./component/Toolbar";
 import StudentsComponent from "./component/StudentsComponents1";
+
+
+
+
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 
 const Test = (props) => {
   return <div> morvarid {props.lastname}</div>;
@@ -78,9 +87,11 @@ const Learn8 = (props) => {
 root.render(
   <React.StrictMode>
     <div>
+     
       {/* <Hello name="morvarid" age="35" /> */}
-      <StudentsComponent/>
-
+      <Toolbar />
+      <StudentsComponent />
+     
       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
       {/* <List/> */}
