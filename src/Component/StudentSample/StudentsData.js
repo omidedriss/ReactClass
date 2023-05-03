@@ -1,14 +1,14 @@
-import React, { useState , useEffect} from "react";
+import React, { useState , useEffect,useRef} from "react";
 import Button from "./ButtonApp";
-import Student from "./StudentComponent";
-import Students from './StudentsList';
-import Toolbar from "../Component/header/Toolbar"
+import Student from "./Student";
+import Students from './Students';
+import Toolbar from "../header/Toolbar"
 
 const StudentsData = () => {
   const [Search, setSearch] = useState();
   const [Toggle, setToggle] = useState(false);
 
-  // const inputEl = useRef(null);
+  const inputEl = useRef(null);
 
   const [studentsState, setStudents] = useState([
     {
@@ -111,7 +111,7 @@ const StudentsData = () => {
 
   return(
     <div>
-      <Student 
+       <Student 
       name={Name} 
       classNumber={ClassNumber} 
       phoneNumber={PhoneNumber} 
@@ -124,20 +124,20 @@ const StudentsData = () => {
       btnType="normal"
       btnText="ADD"/>
 
-       {/* <input onChange={find} value={Search} ref={inputEl}/> */}
+       <input onChange={find} value={Search} ref={inputEl}/>
 
        <input
         type="text"
         value={searchBarValue}
-        onChange={searchFilterFunction}
-      />
+        onChange={searchFilterFunction} />
       
       <Button Clicked={()=> setToggle(!Toggle)}  btnType='Warning' btnText="Toogle"></Button>
-        
+        <Toolbar /> 
       <Students
-        studentsList={studentsState}    
+        studentsList={studentsState}
         toggle={Toggle} 
         Clicked={deleteStudent}   
+        nameChanged={studentNameHandeler}
         studentNameHandeler={studentNameHandeler} 
         studentClassNumberHandeler={studentClassNumberHandeler} 
         studentPhoneNumberHandeler={studentPhoneNumberHandeler} 

@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import StudentsData from './Component/StudentsData';
+import StudentsData from './Component/StudentSample/StudentsData';
+//import Toolbar from './Component/header/Toolbar';
+//import Student from './Component/StudentSample/Student';
+import RouterLinkFirstLearnWithLocationAndParam from './Router/RouterLinkFirstLearnWithLocationAndParam';
+import { BrowserRouter } from 'react-router-dom';
+import RouterTwoLearnwithRouterSimple from './Router/RouterTwoLearnwithRouterSimple';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // function Hello(props){
@@ -25,7 +30,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <StudentsData />
+    <BrowserRouter>
+      <RouterTwoLearnwithRouterSimple />
+    </BrowserRouter>
   </React.StrictMode>
   
 );
