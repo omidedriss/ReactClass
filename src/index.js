@@ -15,7 +15,7 @@ import Toolbar from "./component/Toolbar";
 import StudentsComponent from "./component/StudentsComponents1";
 import RouterLinkFirst from "./component/RouterLinkFirst";
 import { BrowserRouter } from "react-router-dom";
-
+import App2 from "./App2";
 
 
 
@@ -93,6 +93,7 @@ root.render(
             {/* <StudentsComponent /> */}
     <BrowserRouter>
       <RouterLinkFirst/>
+      <App2></App2>
       </BrowserRouter> 
       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
