@@ -13,7 +13,8 @@ import Studensts from "./component/Students";
 import Students from "./component/Students";
 import Toolbar from "./component/Toolbar";
 import StudentsComponent from "./component/StudentsComponents1";
-
+import RouterLinkFirst from "./component/RouterLinkFirst";
+import { BrowserRouter } from "react-router-dom";
 
 
 
@@ -89,9 +90,10 @@ root.render(
     <div>
      
       {/* <Hello name="morvarid" age="35" /> */}
-      <Toolbar />
-      <StudentsComponent />
-     
+            {/* <StudentsComponent /> */}
+    <BrowserRouter>
+      <RouterLinkFirst/>
+      </BrowserRouter> 
       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
       {/* <List/> */}
