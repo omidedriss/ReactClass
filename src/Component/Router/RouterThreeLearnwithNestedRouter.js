@@ -25,12 +25,12 @@ function RouterThreeLearnwithNestedRouter() {
   console.log(Location.hash);
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/about" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Route>
+        {/* <Route path="/" element={<Home />}> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        {/* </Route> */}
       </Routes>
     </div>
   );

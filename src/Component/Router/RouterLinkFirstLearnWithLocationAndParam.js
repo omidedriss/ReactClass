@@ -51,7 +51,7 @@ function RouterLinkFirstLearnWithLocationAndParam() {
         </Link>
         <button
           onClick={(p) => {
-            setSearchParams(`filter=${test2}`);
+            setSearchParams(`filter=${test2}`); // "filter="+{test2}
           }}
         >
           Change Param

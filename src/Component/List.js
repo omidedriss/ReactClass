@@ -4,13 +4,18 @@ const List = (props) => {
   let test = [];
   const [count, setCount] = useState([]);
 
-  const listItem = numbers.map((x, index) => {
-    console.log(index);
-    return <li key={index}>{x}</li>;
+  const Test2 = numbers.find((x) => {
+    return x > 3;
+  });
+
+  const listItem = numbers.map((item, index) => {
+    // console.log(index);
+    return <p key={index}>{item}</p>;
   });
   return (
     <div>
       <ul>{listItem}</ul>
+      {Test2}
     </div>
   );
 };

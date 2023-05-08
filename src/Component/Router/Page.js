@@ -12,7 +12,7 @@ function Page() {
 
   return (
     <main style={{ padding: "1rem" }}>
-      <h2>Name:{menu.name}</h2>
+      <h2>Name:{menu.description}</h2>
 
       <button
         onClick={() => {

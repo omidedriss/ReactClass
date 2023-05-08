@@ -15,10 +15,10 @@ function RouterFourLearnwithListLinkAndShow() {
 
   return (
     <div>
-      {Menues.map((item) => (
+      {Menues.map((item, index) => (
         <NavLink
           to={`/Pages/${item.name}`}
-          key={item.number}
+          key={index}
           className={({ isActive }) => (isActive ? "link red" : "link blue")}
         >
           {item.name}

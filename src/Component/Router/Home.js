@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 function Home() {
   return (
     <div>
+      <Outlet />
       <div>Hello World</div>
       <nav
         style={{
@@ -17,7 +18,6 @@ function Home() {
         {/* <NavLink to="/home">Home | </NavLink>
         <NavLink to="/about"> About</NavLink> */}
       </nav>
-      {/* <Outlet /> */}
     </div>
   );
 }

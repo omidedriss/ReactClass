@@ -134,13 +134,7 @@ axios.interceptors.response.use(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeContextProvider>
-        {/* <AuthContextFirst.Provider value={{ authetication: false }}> */}
-        <AuthContextProvider>
-          <SignInNineWithContextAndLocalStorage />
-        </AuthContextProvider>
-      </ThemeContextProvider>
-      {/* </AuthContextFirst.Provider> */}
+      <RouterFiveLearnwithParamRoute />
     </BrowserRouter>
   </React.StrictMode>
 );
