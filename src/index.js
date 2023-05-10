@@ -12,9 +12,11 @@ import Textboxstyle from "./component/Style";
 import Studensts from "./component/Students";
 import Students from "./component/Students";
 import Toolbar from "./component/Toolbar";
+import { BrowserRouter } from "react-router-dom";
 import StudentsComponent from "./component/StudentsComponents1";
 import RouterLinkFirst from "./component/RouterLinkFirst";
-import { BrowserRouter } from "react-router-dom";
+import RouterTwoLearnwithRouterSimple from "./component/RouterTwoLearnwithRouterSimple";
+
 import App2 from "./App2";
 
 
@@ -92,8 +94,12 @@ root.render(
       {/* <Hello name="morvarid" age="35" /> */}
             {/* <StudentsComponent /> */}
     <BrowserRouter>
-      <RouterLinkFirst/>
-      <App2></App2>
+      <RouterTwoLearnwithRouterSimple/>
+      
+      
+
+
+
       </BrowserRouter> 
       {/* <Test lastname="parhizgar" />  */}
       {/* <StateTestLearn/> */}
