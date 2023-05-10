@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Toolbar from './header/Toolbar';
-//import './index.css';
-//import App from './App';
-
-//import Button from './Component/Toggle';
-//import StopWatch from './Component/useEffect';
-import StudentsComponent from './Component/StudentsComponents1';
+import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,10 +26,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
  <React.StrictMode>
-    <div >
-      <Toolbar/>
+<App/>
+   
+      
     
-    </div>
+   
+
   </React.StrictMode>
 );
 
