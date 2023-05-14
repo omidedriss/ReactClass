@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from "react";
-import axios from axios;
-const API = ()=>{
-    
-    axios.get("https://github.com/moharnadreza/jsonplaceholder/post").then((response)=>{
+import axios from "axios";
+const APITest = ()=>{
+    const [poststate,setpoststate]=useState([]);
+    axios.get("https://jsonplaceholder.ir/posts").then((response)=>{
         console.log(response.data);
+        const posts=response.data;
+        setpoststate(posts);
     })
+
+    return(
+        
+     <div style={{ flexDirection: "row" }}>
+      {poststate.map((p) => {
+        return <p>{p.title}</p>;
+
+      })}
+    </div>
+    );
 }
-export default React.memo(API);
+export default APITest;
