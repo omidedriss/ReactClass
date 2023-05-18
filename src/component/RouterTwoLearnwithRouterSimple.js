@@ -8,14 +8,14 @@ import Home from "./Home";
 function RouterTwoLearnwithRouterSimple() {
   return (
     <div>
-      {/* <Home></Home>  */}
-      {/* <Route path="/" element={<Home/>}></Route>  */}
-      <Routes>
-        <Route path="/" element={<Home />}>
+       <Home></Home>
+      
+       <Routes> 
+         {/* <Route path="/" element={<Home />}> */}
           <Route path="/contact us" element={<Contact></Contact>}></Route>
           <Route path="/about us" element={<About></About>}></Route>
-        </Route>
-      </Routes>
+        {/* </Route> */}
+       </Routes> 
     </div>
   );
 }

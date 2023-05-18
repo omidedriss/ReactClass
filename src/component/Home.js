@@ -16,7 +16,7 @@ import { NavLink , Outlet} from "react-router-dom";
             <NavLink to="/contact us"> contact|</NavLink>
 
         </nav>
-        <Outlet></Outlet> 
+         {/* <Outlet></Outlet> */}
     </div>
     );
  }

@@ -14,17 +14,12 @@ import Students from "./component/Students";
 import Toolbar from "./component/Toolbar";
 import { BrowserRouter } from "react-router-dom";
 import StudentsComponent from "./component/StudentsComponents1";
-import RouterLinkFirst from "./component/RouterLinkFirst";
+import RouterLinkFirstLearnWithLocationAndParam from "./component/RouterLinkFirst";
 import RouterTwoLearnwithRouterSimple from "./component/RouterTwoLearnwithRouterSimple";
-
 import App2 from "./App2";
-
-
-
-
+import Apione from "./component/Apione";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 
 const Test = (props) => {
   return <div> morvarid {props.lastname}</div>;
@@ -89,22 +84,13 @@ const Learn8 = (props) => {
 //////////////////////////////////////////
 root.render(
   <React.StrictMode>
-    <div>
-     
-      {/* <Hello name="morvarid" age="35" /> */}
-            {/* <StudentsComponent /> */}
     <BrowserRouter>
-      <RouterTwoLearnwithRouterSimple/>
-      
-      
+      <RouterTwoLearnwithRouterSimple></RouterTwoLearnwithRouterSimple>
+    </BrowserRouter>
 
-
-
-      </BrowserRouter> 
-      {/* <Test lastname="parhizgar" />  */}
-      {/* <StateTestLearn/> */}
-      {/* <List/> */}
-    </div>
+    {/* <Hello name="morvarid" age="35" /> */}
+    {/* <Apione></Apione> */}
+    {/* <List/>  */}
   </React.StrictMode>
 );
 
