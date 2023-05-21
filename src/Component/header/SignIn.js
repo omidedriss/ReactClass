@@ -1,7 +1,8 @@
 import React from 'react';
 import Logo from '../../assets/images/logo.png';
-import Button from '../SampleStudent/ButtonApp';
-import './signIn.css';
+import Button from '../StudentSample/ButtonApp';
+import './SignIn.css';
+
 const SignIn =(props)=>(
     <div>
         <img src={Logo} alt="Logo" />

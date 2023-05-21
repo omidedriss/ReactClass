@@ -1,16 +1,28 @@
-import React from "react";
+import React,{ useState } from "react";
 import "./Toolbar.css";
-import LLogo from "./Logo"
+import Logo from "./Logo"
 import MenuItems from "./MenuItems"
-
+import Button from "../StudentSample/ButtonApp";
+import Modal from "../Modal/Modal";
+import SignIn from "./SignIn";
+import SideDrawer from "../header/SideDrawer";
+ 
 const Toolbar=(props) => {
+    const [showModal, setShowModal] = useState(false);
+  const [openSideDrawer, setOpenSideDrawer] = useState(false);
+  const modalHandler = () => {
+    setShowModal(true);
+  };
+  const modalClosed = () => {
+    setShowModal(false);
+  };
+  const DrawerHandler = () => {
+    setOpenSideDrawer(true);
+  };
+  const closeDrawer = () => {
+    setOpenSideDrawer(false);
+  };
     return(
-        // <div className="Toolbar">
-        //     <LLogo className="showNav" height="80%" />
-        //     <MenuItems />
-
-        // </div>
-
     <header className="Toolbar">
     <SideDrawer show={openSideDrawer} closeDrawer={closeDrawer} />
     <div onClick={DrawerHandler}>Hamberger Icon</div>
@@ -23,8 +35,7 @@ const Toolbar=(props) => {
     </nav>
     </span>
     <span className="showNav">
-        <Button btnType="danger" clicked={modalHandler}>
-            ورود و ثبت نام
+        <Button btnType="danger" btnText="ورود و ثبت نام" clicked={modalHandler}>
         </Button>
     </span>
 

@@ -9,6 +9,13 @@ const MenuItems = ()=>{
             </MenuItem>
             <MenuItem link="/" >
                 بخش ها
+                {/* <MenuItem link="/">
+                    کلینیک ها
+                </MenuItem>
+                <MenuItem link="/">
+                    پارا کلینیک ها
+                </MenuItem>
+         */}
             </MenuItem>
             <MenuItem link="/" >
                 راهنمای مراجعه کنندگان

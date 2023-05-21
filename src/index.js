@@ -4,12 +4,17 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import StudentsData from './Component/StudentSample/StudentsData';
+//import StudentsData from './Component/StudentSample/StudentsData';
 //import Toolbar from './Component/header/Toolbar';
 //import Student from './Component/StudentSample/Student';
-import RouterLinkFirstLearnWithLocationAndParam from './Router/RouterLinkFirstLearnWithLocationAndParam';
+//import RouterLinkFirstLearnWithLocationAndParam from './Router/RouterLinkFirstLearnWithLocationAndParam';
+//import { BrowserRouter } from 'react-router-dom';
+//import RouterTwoLearnwithRouterSimple from './Router/RouterTwoLearnwithRouterSimple';
+//import Toolbar from './Component/header/Toolbar';
+//import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import RouterTwoLearnwithRouterSimple from './Router/RouterTwoLearnwithRouterSimple';
+
+import Login  from "./Pages/Login/Login"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // function Hello(props){
@@ -31,7 +36,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <RouterTwoLearnwithRouterSimple />
+
+      <Login />
+
     </BrowserRouter>
   </React.StrictMode>
   

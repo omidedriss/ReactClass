@@ -1,9 +1,9 @@
 import React from 'react';
 import Logo from './Logo';
 import MenuItems from './MenuItems';
+import Button from '../../Component/StudentSample/ButtonApp';
+import Backdrop from '../Backdrop/Backdrop';
 import './SideDrawer.css';
-import Button from '../../Component/SampleStudent/ButtonApp';
-import Backdrop from '../backdrop/Backdrop';
 
 const SideDrawer =(props)=>{
     let classes = ['SideDrawer','Close'];
@@ -19,11 +19,13 @@ const SideDrawer =(props)=>{
                     <MenuItems />
                 </nav>
                 <div className="boxButton">
-                    <Button btnType="danger" clicked={()=>alert('sign in page opend')}>
-                        ورود و ثبت نام
+                    <Button btnType="danger" btnText='ورود و ثبت نام' clicked={()=>alert('sign in page opend')}>
+                        
                     </Button>
                 </div>                
             </div>
         </React.Fragment>        
     )
 }
+
+export default SideDrawer;

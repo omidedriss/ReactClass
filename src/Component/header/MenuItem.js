@@ -1,5 +1,6 @@
 import React from 'react';
 import './MenuItem.css'
+
 const MenuItem = (props)=>{
     let classes=[];
     if(props.active)
@@ -15,4 +16,4 @@ const MenuItem = (props)=>{
        
     )
 }
-export default MenuItem
+export default MenuItem;
