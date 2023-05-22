@@ -17,6 +17,7 @@ input{
     margin: 10px;
     padding: 5px;
     width:95%;
+    direction: rtl;
 }
 .captcha_view input{
     width:70%

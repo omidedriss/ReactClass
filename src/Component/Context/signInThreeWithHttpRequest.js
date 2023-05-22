@@ -33,10 +33,7 @@ const SignInThreeWithHttpRequest = (props) => {
       if (validateResult) {
         fetch("https://test.orbitsoftco.com/user_login.php", {
           method: "POST",
-          headers: {
-            Accept: "applicaion/json",
-            "Content-Type": "application/json",
-          },
+
           body: JSON.stringify({
             email: username,
             password: password,

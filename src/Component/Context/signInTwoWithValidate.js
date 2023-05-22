@@ -32,7 +32,7 @@ const SignInWithValidate = (props) => {
       const validateResult = validate();
       if (validateResult) {
         setCaptchaValue(0);
-
+        generateCaptcha();
         setErrorMessage("");
         setPassword("");
         setUsername("");
