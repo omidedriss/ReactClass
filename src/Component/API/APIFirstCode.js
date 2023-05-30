@@ -8,7 +8,7 @@ const APIFirstCode = (props) => {
       const posts = response.data;
 
       setPostsState(posts);
-    });
+    },[]);
 
     // fetch("https://jsonplaceholder.ir/posts")
     //   .then((response) => {

@@ -1,6 +1,6 @@
 import React from "react";
 type GProps = {
-  name: string;
+  name?: string;
   messageCount: number;
   isLogging: boolean;
 };

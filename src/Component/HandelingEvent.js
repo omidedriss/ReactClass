@@ -44,7 +44,7 @@ const Event = () => {
         {" "}
         Click
       </a>
-      <button onClick={handleClick}>{isToggleOn ? "ON" : "OFF"}</button>
+      <button  onClick={handleClick}>{isToggleOn ? "ON" : "OFF"}</button>
       {/* function Form() {
   function handleSubmit(e) {
     e.preventDefault();
