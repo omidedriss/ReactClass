@@ -1,14 +1,15 @@
 import react , {useState} from 'react';
+import "./Login.css";
 
 const Login = ()=>{
     const [email, setemail]=useState('');
     const [password, setpassword]=useState('');
 
-    const handlerEmailChange =(event)=>{
+    const handleEmailChange =(event)=>{
         setemail(event.target.value);
     };
 
-    const handlerPasswordChange =(event)=>{
+    const handlePasswordChange =(event)=>{
         setpassword(event.target.value);
     };
 
@@ -17,8 +18,27 @@ const Login = ()=>{
     };
 
     return(
-        <form onSubmit={}
-    )
+       
+        <body>
+    
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username"/>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password"/>
+
+        <button>Log In</button>
+
+    </form>
 
 
-}
+        </body>
+    );
+
+
+};
+
+export default Login;

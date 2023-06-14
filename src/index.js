@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import APITest from './API/FirstAPI';
 import Loader from './Component/Loader/Loader';
+import Login from './Component/Login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,7 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <React.StrictMode>
 
-   <Loader/>
+   <Login/>
       
     
    
