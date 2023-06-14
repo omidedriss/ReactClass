@@ -1,9 +1,31 @@
-import react , {useState} from 'react';
+import react , {useState,useEffect} from 'react';
+import axios from 'axios';
+import {
+    Link,
+    NavLink,
+    BrowserRouter,
+    useSearchParams,
+    useLocation,
+  } from "react-router-dom";
 import "./Login.css";
 
+
 const Login = ()=>{
+
     const [email, setemail]=useState('');
     const [password, setpassword]=useState('');
+    
+    const data={
+       
+        email: email,
+        password: password,
+      }
+
+    
+       
+
+
+    
 
     const handleEmailChange =(event)=>{
         setemail(event.target.value);
@@ -13,24 +35,44 @@ const Login = ()=>{
         setpassword(event.target.value);
     };
 
-    const handleSubmit = (event)=>{
-        event.preventDefault();
+    const handleLogin = ()=>{
+        
+        axios
+        .post("https://test.orbitsoftco.com/user_login.php", data)
+        .then((response) => {
+          console.log(response.data);
+        }).catch(()=>{
+            console.log("error");
+        });
+      
+        
     };
 
     return(
        
         <body>
     
-    <form>
-        <h3>Login Here</h3>
+    <form
+    onSubmit={(e)=>{
+        e.preventDefault();
+    }}
+    >
+        <h3>Login</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username"/>
+        <input type="text" value={email} onChange={handleEmailChange} placeholder="Email or Phone" id="username"/>
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password"/>
+        <input type="password"  value={password} onChange={handlePasswordChange} placeholder="Password" id="password"/>
 
-        <button>Log In</button>
+        <button onClick={handleLogin}>Log In</button>
+        <button>register</button>
+        <NavLink
+              to={`/register`}
+              
+            >
+              register
+            </NavLink>
 
     </form>
 
