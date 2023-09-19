@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import Status from "./TypeScript/Status6";
 // import StudentsComponent from "./Component/SampleStudent/UseRefComponent";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+//Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 //https://jsbin.com
 /////////////////////////////////// without probs
 
